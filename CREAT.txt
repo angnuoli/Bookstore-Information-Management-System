@@ -1,5 +1,3 @@
-CREATE SCHEMA Bookstore;
-
 CREATE TABLE Merchandise(
 	MerID CHAR(8) NOT NULL,
 	Price DECEMAL NOT NULL,

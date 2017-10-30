@@ -1,140 +1,140 @@
-M0000001,$104.97 ,OCP: Oracle9i Certification Kit,P2000001,180
-M0000002,$34.99 ,SQL Server 2000 for Experienced DBA's,P2000002,180
-M0000003,$50.00 ,The Data Warehouse Toolkit: The Complete Guide to Dimensional Modeling,P2000003,180
-M0000004,$17.49 ,How To Do Everything with Your Tablet PC,P2000002,180
-M0000005,$49.95 ,Data Mining: Practical Machine Learning Tools and Techniques with Java Implementations,P2000004,180
-M0000006,$99.00 ,Creating Documents with BusinessObjects 5.1,P2000005,180
-M0000007,$38.49 ,The Guru's Guide to Transact-SQL,P2000006,180
-M0000008,$69.99 ,Access 2002 Developer's Handbook Set,P2000001,180
-M0000009,$38.49 ,ColdFusion MX Web Application Construction Kit,P2000007,180
-M0000010,$95.00 ,Fundamentals of Database Systems ,P2000008,180
-M0000011,$41.99 ,Professional SQL Server 2000 Programming,P2000009,180
-M0000012,$34.99 ,MySQL,P2000008,180
-M0000013,$16.07 ,Cerulean Sins,P2000010,180
-M0000014,$14.00 ,The Secret Life of Bees,P2000011,180
-M0000015,$24.95 ,Google Hacks,P2000012,180
-M0000016,$18.95 ,"Investing in Fixer-Uppers : A Complete Guide to Buying Low, Fixing Smart, Adding Value, and Selling (or Renting) High",P2000013,180
-M0000017,$13.00 ,The Pianist,P2000014,180
-M0000018,$25.95 ,The Girl in the Red Coat: A Memoir,P2000015,180
-M0000019,$3.44 ,The Hours,P2000014,180
-M0000020,$27.50 ,Execution: The Discipline of Getting Things Done,P2000016,180
-M0000021,$27.95 ,The Jester,P2000017,180
-M0000022,$25.00 ,The Vanished Man: A Lincoln Rhyme Novel,P2000018,180
-M0000023,$25.95 ,Twelve Times Blessed,P2000019,180
-M0000024,$13.20 ,The Five Dysfunctions of a Team: A Leadership Fable,P2000020,180
-M0000025,$26.00 ,The Second Time Around,P2000018,180
-M0000026,$12.99 ,The Rescuer: The O'Malley Series,P2000021,180
-M0000027,$13.95 ,Bel Canto: A Novel,P2000022,180
-M0000028,$6.99 ,The Dark Highlander,P2000023,180
-M0000029,$4.75 ,Letters to Kelly,P2000024,180
-M0000030,$27.95 ,The Blank Slate: The Modern Denial of Human Nature,P2000025,180
-M0000031,$26.00 ,Linked: The New Science of Networks,P2000026,180
-M0000032,$15.00 ,Consilience: The Unity of Knowledge,P2000027,180
-M0000033,$22.00 ,The Future of Life,P2000028,180
-M0000034,$44.95 ,A New Kind of Science,P2000029,180
-M0000035,$22.00 ,ON FOOD AND COOKING,P2000030,180
-M0000036,$40.00 ,Building Construction Illustrated,P2000003,180
-M0000037,$24.95 ,A Field Guide to American Houses,P2000031,180
-M0000038,$39.95 ,Prefab,P2000032,180
-M0000039,$60.00 ,Cabins & Camps,P2000032,180
-M0000040,$24.95 ,The New City Home: Smart Solutions for Metro Living,P2000033,180
-M0000041,$50.00 ,Composers' Houses,P2000034,180
-M0000042,$50.00 ,Color: Natural Palettes for Painted Rooms,P2000035,180
-M0000043,$70.00 ,Financial Modeling ,P2000036,180
-M0000044,$122.50 ,Financial Markets & Corporate Strategy,P2000037,180
-M0000045,$79.20 ,Analysis for Financial Management,P2000037,180
-M0000046,$112.95 ,Advanced Accounting,P2000038,180
-M0000047,$139.20 ,Intermediate Accounting,P2000003,180
-M0000048,$126.67 ,Financial Reporting and Analysis ,P2000039,180
-M0000049,$24.95 ,The Guardian,P2000040,180
-M0000050,$26.00 ,The Second Time Around,P2000018,180
-M0000051,$25.00 ,Cosmopolis: A Novel,P2000041,180
-M0000052,$7.99 ,Dreamcatcher,P2000042,180
-M0000053,$19.95 ,House of Leaves,P2000043,180
-M0000054,$6.99 ,The Vampire's Violin,P2000044,180
-M0000055,$17.47 ,Lullaby: A Novel,P2000045,180
-M0000056,$24.95 ,Jinn: A Novel,P2000015,180
-M0000057,$7.99 ,Everything's Eventual: 14 Dark Tales,P2000042,180
-M0000058,$35.00 ,Wolves of the Calla ,P2000046,180
-M0000059,$7.99 ,On Writing,P2000042,180
-M0000060,$14.00 ,White Noise ,P2000011,180
-M0000061,$11.20 ,The Names,P2000047,180
-M0000062,$16.00 ,UNDERWORLD: A NOVEL,P2000048,180
-M0000063,$39.95 ,"Architecture: Form, Space, and Order",P2000003,180
-M0000064,$39.95 ,A Visual Dictionary of Architecture,P2000003,180
-M0000065,$13.00 ,The Magician's Assistant,P2000049,180
-M0000066,$13.95 ,Patron Saint of Liars,P2000050,180
-M0000067,$17.95 ,How the Mind Works,P2000051,180
-M0000068,$10.50 ,The Language Instinct: How the Mind Creates Language,P2000022,180
-M0000069,$15.00 ,Words and Rules: The Ingredients of Language,P2000022,180
-M0000070,$16.95 ,The Diversity of Life,P2000051,180
-M0000071,$18.95 ,On Human Nature,P2000052,180
-M0000072,$6.99 ,A Walk to Remember,P2000040,180
-M0000073,$12.95 ,The Notebook,P2000040,180
-M0000074,$7.50 ,Message in a Bottle,P2000040,180
-M0000075,$35.00 ,Numerical Techniques in Finance,P2000036,180
-M0000076,$74.95 ,Econometric Analysis of Cross Section and Panel Data,P2000036,180
-M0000077,$107.95 ,Introductory Econometrics: A Modern Approach,P2000038,180
-M0000078,$50.00 ,Beyond Coso : Internal Control to Enhance Corporate Governance,P2000003,180
-M0000079,$83.00 ,Real World FPGA Design with Verilog,P2000053,180
-M0000080,$39.95 ,Ldap System Administration,P2000012,180
-M0000081,$39.99 ,The Photoshop Book for Digital Photographers,P2000054,180
-M0000082,$39.99 ,Photoshop 7 Down & Dirty Tricks,P2000054,180
-M0000083,$29.99 ,Mac OS X v. 10.2 Jaguar Killer Tips,P2000054,180
-M0000084,$34.95 ,Persuasive Technology: Using Computers to Change What We Think and Do,P2000004,180
-M0000085,$59.99 ,A+ Certification All-in-One Exam Guide,P2000002,180
-M0000086,$14.95 ,The Demon-Haunted World: Science As a Candle in the Dark,P2000055,180
-M0000087,$35.00 ,Cosmos,P2000027,180
-M0000088,$6.99 ,Broca's Brain: Reflections on the Romance of Science,P2000056,180
-M0000089,$7.99 ,Contact,P2000042,180
-M0000090,$12.95 ,Pale Blue Dot: A Vision of the Human Future in Space,P2000055,180
-M0000091,$21.95 ,The Lovely Bones: A Novel,P2000017,180
-M0000092,$11.95 ,Lucky: A Memoir,P2000057,180
-M0000093,$14.00 ,Atonement,P2000058,180
-M0000094,$12.00 ,Amsterdam,P2000058,180
-M0000095,$14.00 ,Black Dogs,P2000058,180
-M0000096,$13.00 ,Enduring Love,P2000058,180
-M0000097,$25.95 ,Birthright,P2000059,180
-M0000098,$7.50 ,Engaging The Enemy,P2000060,180
-M0000099,$14.95 ,Love By Design,P2000024,180
-M0000100,$25.95 ,Chesapeake Blue,P2000059,180
-M0000101,$39.95 ,The Complete Illustrated Guide to Furniture and Cabinet Construction,P2000033,180
-M0000102,$19.95 ,Choosing & Using Hand Tools,P2000061,180
-M0000103,$19.95 ,Building a Shed,P2000033,180
-M0000104,$7.99 ,Small Gods,P2000062,180
-M0000105,$7.99 ,Going Postal,P2000062,180
-M0000106,$7.99 ,Pyramids,P2000062,180
-M0000107,$13.99 ,The Color of Magic,P2000062,180
-M0000108,$7.99 ,Guards! Guards!,P2000062,180
-M0000109,$7.99 ,Unseen Academicals,P2000062,180
-M0000110,$76.63 ,Look What You Made Me Do,P2000001,180
-M0000111,$77.74 ,Shape of You,P2000054,180
-M0000112,$17.65 ,Love You Like a Love Song,P2000055,180
-M0000113,$88.08 ,Sober,P2000043,180
-M0000114,$71.82 ,Whistle,P2000062,180
-M0000115,$70.68 ,Cry On My Shoulder,P2000060,180
-M0000116,$10.38 ,Tonight - There Is A New Chance,P2000008,180
-M0000117,$31.31 ,Please Don't Go,P2000015,180
-M0000118,$82.38 ,Es rappelt im Karton,P2000036,180
-M0000119,$47.50 ,Wicked Wonderland,P2000030,180
-M0000120,$62.99 ,Love The Way You Lie,P2000028,180
-M0000121,$11.78 ,Locked Away,P2000029,180
-M0000122,$38.60 ,Whataya Want From Me,P2000059,180
-M0000123,$78.57 ,Wolves,P2000048,180
-M0000124,$71.31 ,Open Arms,P2000032,180
-M0000125,$2.04 ,Havana,P2000040,180
-M0000126,$0.10 ,Anywhere,P2000002,180
-M0000127,$55.51 ,Love You Like That,P2000036,180
-M0000128,$20.89 ,We Could Go Back,P2000017,180
-M0000129,$3.45 ,Let Me Go,P2000012,180
-M0000130,$44.59 ,Feels Great,P2000042,180
-M0000131,$44.98 ,I Miss You,P2000007,180
-M0000132,$6.10 ,Bedroom Floor,P2000026,180
-M0000133,$54.90 ,Gorgeous,P2000012,180
-M0000134,$63.39 ,Motor Sport,P2000058,180
-M0000135,$66.90 ,Burning,P2000039,180
-M0000136,$2.20 ,Never Let You Go,P2000003,180
-M0000137,$39.79 ,Evergreen,P2000042,180
-M0000138,$24.57 ,In Your Phone,P2000008,180
-M0000139,$77.23 ,Tu No Metes Cabras Remix,P2000037,180
-M0000140,$17.56 ,up in this,P2000002,180
+M0000001,104.97,OCP: Oracle9i Certification Kit,P2000001,180
+M0000002,34.99,SQL Server 2000 for Experienced DBA's,P2000002,180
+M0000003,50.00,The Data Warehouse Toolkit: The Complete Guide to Dimensional Modeling,P2000003,180
+M0000004,17.49,How To Do Everything with Your Tablet PC,P2000002,180
+M0000005,49.95,Data Mining: Practical Machine Learning Tools and Techniques with Java Implementations,P2000004,180
+M0000006,99.00,Creating Documents with BusinessObjects 5.1,P2000005,180
+M0000007,38.49,The Guru's Guide to Transact-SQL,P2000006,180
+M0000008,69.99,Access 2002 Developer's Handbook Set,P2000001,180
+M0000009,38.49,ColdFusion MX Web Application Construction Kit,P2000007,180
+M0000010,95.00,Fundamentals of Database Systems ,P2000008,180
+M0000011,41.99,Professional SQL Server 2000 Programming,P2000009,180
+M0000012,34.99,MySQL,P2000008,180
+M0000013,16.07,Cerulean Sins,P2000010,180
+M0000014,14.00,The Secret Life of Bees,P2000011,180
+M0000015,24.95,Google Hacks,P2000012,180
+M0000016,18.95,"Investing in Fixer-Uppers : A Complete Guide to Buying Low, Fixing Smart, Adding Value, and Selling (or Renting) High",P2000013,180
+M0000017,13.00,The Pianist,P2000014,180
+M0000018,25.95,The Girl in the Red Coat: A Memoir,P2000015,180
+M0000019,3.44,The Hours,P2000014,180
+M0000020,27.50,Execution: The Discipline of Getting Things Done,P2000016,180
+M0000021,27.95,The Jester,P2000017,180
+M0000022,25.00,The Vanished Man: A Lincoln Rhyme Novel,P2000018,180
+M0000023,25.95,Twelve Times Blessed,P2000019,180
+M0000024,13.20,The Five Dysfunctions of a Team: A Leadership Fable,P2000020,180
+M0000025,26.00,The Second Time Around,P2000018,180
+M0000026,12.99,The Rescuer: The O'Malley Series,P2000021,180
+M0000027,13.95,Bel Canto: A Novel,P2000022,180
+M0000028,6.99,The Dark Highlander,P2000023,180
+M0000029,4.75,Letters to Kelly,P2000024,180
+M0000030,27.95,The Blank Slate: The Modern Denial of Human Nature,P2000025,180
+M0000031,26.00,Linked: The New Science of Networks,P2000026,180
+M0000032,15.00,Consilience: The Unity of Knowledge,P2000027,180
+M0000033,22.00,The Future of Life,P2000028,180
+M0000034,44.95,A New Kind of Science,P2000029,180
+M0000035,22.00,ON FOOD AND COOKING,P2000030,180
+M0000036,40.00,Building Construction Illustrated,P2000003,180
+M0000037,24.95,A Field Guide to American Houses,P2000031,180
+M0000038,39.95,Prefab,P2000032,180
+M0000039,60.00,Cabins & Camps,P2000032,180
+M0000040,24.95,The New City Home: Smart Solutions for Metro Living,P2000033,180
+M0000041,50.00,Composers' Houses,P2000034,180
+M0000042,50.00,Color: Natural Palettes for Painted Rooms,P2000035,180
+M0000043,70.00,Financial Modeling ,P2000036,180
+M0000044,122.50,Financial Markets & Corporate Strategy,P2000037,180
+M0000045,79.20,Analysis for Financial Management,P2000037,180
+M0000046,112.95,Advanced Accounting,P2000038,180
+M0000047,139.20,Intermediate Accounting,P2000003,180
+M0000048,126.67,Financial Reporting and Analysis ,P2000039,180
+M0000049,24.95,The Guardian,P2000040,180
+M0000050,26.00,The Second Time Around,P2000018,180
+M0000051,25.00,Cosmopolis: A Novel,P2000041,180
+M0000052,7.99,Dreamcatcher,P2000042,180
+M0000053,19.95,House of Leaves,P2000043,180
+M0000054,6.99,The Vampire's Violin,P2000044,180
+M0000055,17.47,Lullaby: A Novel,P2000045,180
+M0000056,24.95,Jinn: A Novel,P2000015,180
+M0000057,7.99,Everything's Eventual: 14 Dark Tales,P2000042,180
+M0000058,35.00,Wolves of the Calla ,P2000046,180
+M0000059,7.99,On Writing,P2000042,180
+M0000060,14.00,White Noise ,P2000011,180
+M0000061,11.20,The Names,P2000047,180
+M0000062,16.00,UNDERWORLD: A NOVEL,P2000048,180
+M0000063,39.95,"Architecture: Form, Space, and Order",P2000003,180
+M0000064,39.95,A Visual Dictionary of Architecture,P2000003,180
+M0000065,13.00,The Magician's Assistant,P2000049,180
+M0000066,13.95,Patron Saint of Liars,P2000050,180
+M0000067,17.95,How the Mind Works,P2000051,180
+M0000068,10.50,The Language Instinct: How the Mind Creates Language,P2000022,180
+M0000069,15.00,Words and Rules: The Ingredients of Language,P2000022,180
+M0000070,16.95,The Diversity of Life,P2000051,180
+M0000071,18.95,On Human Nature,P2000052,180
+M0000072,6.99,A Walk to Remember,P2000040,180
+M0000073,12.95,The Notebook,P2000040,180
+M0000074,7.50,Message in a Bottle,P2000040,180
+M0000075,35.00,Numerical Techniques in Finance,P2000036,180
+M0000076,74.95,Econometric Analysis of Cross Section and Panel Data,P2000036,180
+M0000077,107.95,Introductory Econometrics: A Modern Approach,P2000038,180
+M0000078,50.00,Beyond Coso : Internal Control to Enhance Corporate Governance,P2000003,180
+M0000079,83.00,Real World FPGA Design with Verilog,P2000053,180
+M0000080,39.95,Ldap System Administration,P2000012,180
+M0000081,39.99,The Photoshop Book for Digital Photographers,P2000054,180
+M0000082,39.99,Photoshop 7 Down & Dirty Tricks,P2000054,180
+M0000083,29.99,Mac OS X v. 10.2 Jaguar Killer Tips,P2000054,180
+M0000084,34.95,Persuasive Technology: Using Computers to Change What We Think and Do,P2000004,180
+M0000085,59.99,A+ Certification All-in-One Exam Guide,P2000002,180
+M0000086,14.95,The Demon-Haunted World: Science As a Candle in the Dark,P2000055,180
+M0000087,35.00,Cosmos,P2000027,180
+M0000088,6.99,Broca's Brain: Reflections on the Romance of Science,P2000056,180
+M0000089,7.99,Contact,P2000042,180
+M0000090,12.95,Pale Blue Dot: A Vision of the Human Future in Space,P2000055,180
+M0000091,21.95,The Lovely Bones: A Novel,P2000017,180
+M0000092,11.95,Lucky: A Memoir,P2000057,180
+M0000093,14.00,Atonement,P2000058,180
+M0000094,12.00,Amsterdam,P2000058,180
+M0000095,14.00,Black Dogs,P2000058,180
+M0000096,13.00,Enduring Love,P2000058,180
+M0000097,25.95,Birthright,P2000059,180
+M0000098,7.50,Engaging The Enemy,P2000060,180
+M0000099,14.95,Love By Design,P2000024,180
+M0000100,25.95,Chesapeake Blue,P2000059,180
+M0000101,39.95,The Complete Illustrated Guide to Furniture and Cabinet Construction,P2000033,180
+M0000102,19.95,Choosing & Using Hand Tools,P2000061,180
+M0000103,19.95,Building a Shed,P2000033,180
+M0000104,7.99,Small Gods,P2000062,180
+M0000105,7.99,Going Postal,P2000062,180
+M0000106,7.99,Pyramids,P2000062,180
+M0000107,13.99,The Color of Magic,P2000062,180
+M0000108,7.99,Guards! Guards!,P2000062,180
+M0000109,7.99,Unseen Academicals,P2000062,180
+M0000110,76.63,Look What You Made Me Do,P2000001,180
+M0000111,77.74,Shape of You,P2000054,180
+M0000112,17.65,Love You Like a Love Song,P2000055,180
+M0000113,88.08,Sober,P2000043,180
+M0000114,71.82,Whistle,P2000062,180
+M0000115,70.68,Cry On My Shoulder,P2000060,180
+M0000116,10.38,Tonight - There Is A New Chance,P2000008,180
+M0000117,31.31,Please Don't Go,P2000015,180
+M0000118,82.38,Es rappelt im Karton,P2000036,180
+M0000119,47.50,Wicked Wonderland,P2000030,180
+M0000120,62.99,Love The Way You Lie,P2000028,180
+M0000121,11.78,Locked Away,P2000029,180
+M0000122,38.60,Whataya Want From Me,P2000059,180
+M0000123,78.57,Wolves,P2000048,180
+M0000124,71.31,Open Arms,P2000032,180
+M0000125,2.04,Havana,P2000040,180
+M0000126,0.10,Anywhere,P2000002,180
+M0000127,55.51,Love You Like That,P2000036,180
+M0000128,20.89,We Could Go Back,P2000017,180
+M0000129,3.45,Let Me Go,P2000012,180
+M0000130,44.59,Feels Great,P2000042,180
+M0000131,44.98,I Miss You,P2000007,180
+M0000132,6.10,Bedroom Floor,P2000026,180
+M0000133,54.90,Gorgeous,P2000012,180
+M0000134,63.39,Motor Sport,P2000058,180
+M0000135,66.90,Burning,P2000039,180
+M0000136,2.20,Never Let You Go,P2000003,180
+M0000137,39.79,Evergreen,P2000042,180
+M0000138,24.57,In Your Phone,P2000008,180
+M0000139,77.23,Tu No Metes Cabras Remix,P2000037,180
+M0000140,17.56,up in this,P2000002,180

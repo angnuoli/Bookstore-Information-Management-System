@@ -1,6 +1,6 @@
 CREATE TABLE Merchandise(
 	MerID CHAR(8) NOT NULL,
-	Price DECEMAL NOT NULL,
+	Price Number NOT NULL,
 	Title VARCHAR(30) NOT NULL,
 	PubID CHAR(8) NOT NULL,
 	Amount INT NOT NULL,
@@ -79,12 +79,12 @@ CREATE TABLE StaffPurchase(
 );
 
 CREATE TABLE CustomerBuy(
-	transID CHAR(8) NOT NULL,
+	TransID CHAR(8) NOT NULL,
 	MerID CHAR(8) NOT NULL,
 	Account CHAR(8) NOT NULL,
 	Amount INT NOT NULL,
 	CDate DATE, 
-	PRIMARY KEY (transID),
+	PRIMARY KEY (TransID),
 	FOREIGN KEY (MerID) REFERENCES Merchandise(MerID),
 	FOREIGN KEY (Account) REFERENCES User(Account)
 );

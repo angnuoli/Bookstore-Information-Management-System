@@ -1,0 +1,19 @@
+-- 1
+SELECT W.WareID, W.State, W.City
+FROM CDArtists as C, Merchandise as M, StoreIn As S, Warehouse As W
+WHERE C.Artist='Taylor Swift'
+	  AND C.MerID = M.MerID
+	  AND M.MerID = S.MerID
+	  AND S.WareID = W.WareID;
+
+-- 2
+SELECT U.Name, U.Gender
+FROM Books B, CustomerBuy CB, User U
+WHERE B.ISBN = '72227885' AND B.MerID = CB.MerID AND CB.Account = U.Account;
+
+-- 3
+SELECT B.Category, SUM(Amount*Price)/SUM(Amount)
+FROM Merchandise M, Books B
+WHERE M.MerID = B.MerID
+GROUP BY B.Category
+ORDER BY 2 DESC;

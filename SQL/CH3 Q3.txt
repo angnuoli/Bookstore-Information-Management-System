@@ -1,0 +1,13 @@
+CH3 Q3
+2.
+SELECT U.Name, U.Gender
+FROM Books B, CustomerBuy CB, User U
+WHERE B.ISBN = '72227885' AND B.MerID = CB.MerID AND CB.Account = U.Account;
+
+3.
+
+SELECT SUM(*) AS TotalAmount
+FROM Merchandise M, Books B
+WHERE M.MerID = B.MerID
+GROUP BY B.Category
+ORDER BY SUM(*);

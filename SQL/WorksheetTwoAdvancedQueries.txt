@@ -1,0 +1,76 @@
+-- 1
+SELECT User.Name, SUM(CustomerBuy.Amount * M.Price)
+FROM User, CustomerBuy, Merchandise AS M
+WHERE User.Account = CustomerBuy.Account AND M.MerID= CustomerBuy.MerID
+Group BY User.Account;
+
+-- 2
+SELECT U.Name, U.Email
+FROM User AS U, CustomerBuy AS S, Merchandise AS M
+WHERE U.Account = S.Account AND M.MerID = S.MerID
+Group By U.Account
+Having SUM(S.Amount * M.Price) > (SELECT AVG(A.Spending)
+					        FROM (SELECT U.Name, SUM(S.Amount * M.Price) AS Spending
+							FROM User AS U, CustomerBuy AS S, Merchandise AS M
+							WHERE U.Account = S.Account AND M.MerID = S.MerID
+							GROUP BY U.Name
+							) AS A
+					      );
+
+-- 3
+SELECT M.Title, SUM(S.Amount) AS Sum
+FROM CustomerBuy AS S, Merchandise AS M, Books AS B
+WHERE B.MerID = M.MerID AND M.MerID = S.MerID
+Group By  M.Title
+Order By Sum DESC;
+
+-- 4
+SELECT M.Title, (SUM(S.Amount) * M.Price) As Dollars
+FROM CustomerBuy AS S, Merchandise AS M   
+WHERE M.MerID = S.MerID
+Group By M.Title
+Having SUM(S.Amount) > 0
+Order By Dollars DESC;
+
+--  5
+SELECT MAX(number), author FROM
+  (SELECT COUNT(c.amount) AS number, BA.author AS author
+  FROM Books AS B, Bookauthors AS BA, Merchandise AS M, User AS U,  CustomerBuy AS C
+  WHERE B.merId = BA.merId AND M.merId = B.merId AND C.merId = B.merId 
+      AND C.account = U.account AND U.customerFlag = "TRUE"
+  Group BY BA.author);
+
+-- 6
+SELECT author, max(profit) FROM(
+	SELECT BA.author, SUM(M.price * C.amount) AS profit
+	FROM Books AS B, Bookauthors AS BA, Merchandise AS M, User AS U, 
+		   CustomerBuy AS C
+	WHERE B.merId = BA.merId AND M.merId = B.merId AND C.merId = B.merId 
+		     AND U.customerFlag = "TRUE" 
+	Group BY BA.author
+	);
+
+-- 7
+SELECT account, name, gender, email, savings, address, max(cost) FROM(
+		SELECT U.account, U.name, U.gender, U.email, U.savings, U.address, SUM(M.price * C.amount) AS cost
+		FROM Books AS B, Bookauthors AS BA, Merchandise AS M, User AS U, 
+			   CustomerBuy AS C
+		WHERE B.merId = BA.merId AND M.merId = B.merId AND C.merId = B.merId 
+			    AND C.account = U.account AND U.customerFlag ="TRUE" 
+		Group BY BA.author
+	);
+
+--  8
+SELECT author 
+FROM  Merchandise AS M, CustomerBuy as C, Bookauthors as BA 
+WHERE M.MerID = C.MerID AND M.MerID = BA.MerID AND C.account in
+	(SELECT account
+	 FROM (SELECT SUM(M.price * C.amount) as total_price, C.account as account
+	            FROM Merchandise AS M, CustomerBuy as C, User AS U
+	            WHERE U.Account = C.Account AND C.MerID = M.MerID
+	            Group by U.Account) 
+	WHERE total_price > (select AVG(total_price) FROM (SELECT SUM(M.price * C.amount) as total_price, C.account as account
+	      FROM Merchandise AS M, CustomerBuy as C, User AS U
+	      WHERE U.Account = C.Account AND C.MerID = M.MerID
+	      Group by U.Account)));
+

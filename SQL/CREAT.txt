@@ -1,6 +1,6 @@
 CREATE TABLE Merchandise(
 	MerID CHAR(8) NOT NULL,
-	Price DECEMAL NOT NULL,
+	Price Number NOT NULL,
 	Title VARCHAR(30) NOT NULL,
 	PubID CHAR(8) NOT NULL,
 	Amount INT NOT NULL,
@@ -17,9 +17,10 @@ CREATE TABLE Books(
 );
 
 CREATE TABLE BookAuthors(
+	AuthorID CHAR(8) NOT NULL,
 	MerID CHAR(8) NOT NULL,
 	Author VARCHAR(30) NOT NULL,
-	PRIMARY KEY(MerID, Author),
+	PRIMARY KEY(AuthorID),
 	FOREIGN KEY(MerID) REFERENCES Books(MerID)
 );
 
@@ -31,9 +32,10 @@ CREATE TABLE CDs(
 );
 
 CREATE TABLE CDArtists(
+	ArtistID CHAR(8) NOT NULL,
 	MerID CHAR(8) NOT NULL,
 	Artist VARCHAR(30) NOT NULL,
-	PRIMARY KEY(MerID, Artist),
+	PRIMARY KEY(ArtistID),
 	FOREIGN KEY(MerID) REFERENCES CDs(MerID)
 );
 
@@ -79,12 +81,12 @@ CREATE TABLE StaffPurchase(
 );
 
 CREATE TABLE CustomerBuy(
-	transID CHAR(8) NOT NULL,
+	TransID CHAR(8) NOT NULL,
 	MerID CHAR(8) NOT NULL,
 	Account CHAR(8) NOT NULL,
 	Amount INT NOT NULL,
 	CDate DATE, 
-	PRIMARY KEY (transID),
+	PRIMARY KEY (TransID),
 	FOREIGN KEY (MerID) REFERENCES Merchandise(MerID),
 	FOREIGN KEY (Account) REFERENCES User(Account)
 );
@@ -95,13 +97,22 @@ CREATE TABLE User(
 	Name VARCHAR(30),
 	Email VARCHAR(30) NOT NULL,
 	Gender CHAR(1),
-	StaffFlag BOOLEAN NOT NULL,
-	Salary INT,
-	SSN CHAR(9),
-	CustomerFlag BOOLEAN NOT NULL,
-	Phone CHAR(10),
-	Savings INT DEFAULT 0,
-	Address VARCHAR(50),
 	PRIMARY KEY (Account)
 );
 
+CREATE TABLE Staff(
+	Account CHAR(8) NOT NULL,
+	Salary INT,
+	SSN CHAR(9),
+	PRIMARY KEY (Account),
+	FOREIGN KEY (Account) REFERENCES User(Account)
+);
+
+CREATE TABLE Customer(
+	Account CHAR(8) NOT NULL,
+	Phone CHAR(10),
+	Savings INT DEFAULT 0,
+	Address VARCHAR(50),
+	PRIMARY KEY (Account),
+	FOREIGN kEY (Account) REFERENCES User(Account)
+);

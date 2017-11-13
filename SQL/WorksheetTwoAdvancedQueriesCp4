@@ -1,0 +1,33 @@
+-- 1
+SELECT User.Name, Round(SUM(CustomerBuy.Amount * M.Price),2) as Total_Spent
+FROM User, CustomerBuy, Merchandise AS M
+WHERE User.Account = CustomerBuy.Account AND M.MerID= CustomerBuy.MerID
+Group BY User.Account;
+
+-- 2
+SELECT U.Name, U.Email
+FROM User AS U, CustomerBuy AS S, Merchandise AS M
+WHERE U.Account = S.Account AND M.MerID = S.MerID
+Group By U.Account
+Having SUM(S.Amount * M.Price) > (SELECT AVG(A.Spending)
+					        FROM (SELECT U.Name, SUM(S.Amount * M.Price) AS Spending
+							FROM User AS U, CustomerBuy AS S, Merchandise AS M
+							WHERE U.Account = S.Account AND M.MerID = S.MerID
+							GROUP BY U.Name
+							) AS A
+					      );
+
+-- 3
+SELECT M.Title, SUM(S.Amount) AS Sum
+FROM CustomerBuy AS S, Merchandise AS M, Books AS B
+WHERE B.MerID = M.MerID AND M.MerID = S.MerID
+Group By  M.Title
+Order By Sum DESC;
+
+-- 4
+SELECT M.Title, Round((SUM(S.Amount) * M.Price),2) As Dollars
+FROM CustomerBuy AS S, Merchandise AS M   
+WHERE M.MerID = S.MerID
+Group By M.Title
+Having SUM(S.Amount) > 0
+Order By Dollars DESC;

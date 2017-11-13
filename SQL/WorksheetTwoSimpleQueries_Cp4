@@ -1,0 +1,33 @@
+----1
+SELECT M.Title , BA.Author
+FROM  MERCHANDISE M, BOOKS B, BOOKAUTHORS BA
+WHERE M.MerID = B.MerID AND M.MerID = BA.MerID AND BA.Author LIKE '%Pratchett' AND M.Price<10;
+
+----2
+SELECT M.Title, C.CDate, U.Name
+FROM CUSTOMERBUY C, MERCHANDISE M, USER U, CUSTOMER CM
+WHERE C.MerID = M.MerID AND C.Account = U.Account AND U.Account = CM.Account
+GROUP BY U.ACCOUNT;
+
+----3
+SELECT M.Title, B.ISBN
+FROM MERCHANDISE M , BOOKS B
+WHERE M.MerID = B.MerID AND M.Amount<5;
+
+----4
+SELECT U.Name, M.Title
+FROM USER U, Books B, BookAuthors BK, CUSTOMERBUY C, MERCHANDISE M, CUSTOMER CM
+WHERE M.MerID = B. MerID AND B.MerID =  BK.MerID AND M.MerID = C.MerID AND C.Account = U.Account AND U.Account = CM.Account AND BK.Author LIKE '%Pratchett';
+
+----5
+SELECT U.Name, C. Amount
+FROM CUSTOMERBUY C , USER U, CUSTOMER CM
+WHERE C.Account = U.Account AND U.Account = CM.Account AND U.Account = 'A0000001'
+GROUP BY U.ACCOUNT;
+
+----6
+SELECT U.Name, C. Amount 
+FROM  CUSTOMERBUY C,  USER U, CUSTOMER CM
+WHERE C.Account = U.Account AND U.Account = CM.Account
+GROUP BY C.Account
+HAVING C.Amount = MAX(C. Amount);

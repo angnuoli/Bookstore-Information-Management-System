@@ -1,0 +1,16 @@
+CREATE VIEW CustomerPreference(Name, Category)
+AS SELECT U.Name, F.Category
+FROM (SELECT A.Account, A.Category, Max(A.CategoryNum)
+	FROM (SELECT C.Account, B.Category, Count(*) as CategoryNum
+		FROM Books as B, CustomerBuy as CB, Customer as C
+		WHERE B.MerID = CB.MerID AND CB.Account = C.Account
+		GROUP BY C.Account, B.Category) As A
+	GROUP BY A.Account) As F, User As U
+WHERE F.account = U.Account;
+
+CREATE VIEW ConsumptionOnBooks(Customer, Consumption)
+AS SELECT U.Name, Round(sum(M.Price), 2) AS Money_Spent_on_Books
+FROM User U, Merchandise M, Books B, CustomerBuy C
+WHERE U.Account = C.Account and C.MerID = B.MerID and B.MerID = M.MerID
+Group by U.account
+ORDER BY 2 DESC;

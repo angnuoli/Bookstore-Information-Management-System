@@ -17,10 +17,9 @@ CREATE TABLE Books(
 );
 
 CREATE TABLE BookAuthors(
-	AuthorID CHAR(8) NOT NULL,
 	MerID CHAR(8) NOT NULL,
 	Author VARCHAR(30) NOT NULL,
-	PRIMARY KEY(AuthorID),
+	PRIMARY KEY(MerID, Author),
 	FOREIGN KEY(MerID) REFERENCES Books(MerID)
 );
 
@@ -32,10 +31,9 @@ CREATE TABLE CDs(
 );
 
 CREATE TABLE CDArtists(
-	ArtistID CHAR(8) NOT NULL,
 	MerID CHAR(8) NOT NULL,
 	Artist VARCHAR(30) NOT NULL,
-	PRIMARY KEY(ArtistID),
+	PRIMARY KEY(MerID, Artist),
 	FOREIGN KEY(MerID) REFERENCES CDs(MerID)
 );
 
@@ -97,22 +95,13 @@ CREATE TABLE User(
 	Name VARCHAR(30),
 	Email VARCHAR(30) NOT NULL,
 	Gender CHAR(1),
-	PRIMARY KEY (Account)
-);
-
-CREATE TABLE Staff(
-	Account CHAR(8) NOT NULL,
+	StaffFlag BOOLEAN NOT NULL,
 	Salary INT,
 	SSN CHAR(9),
-	PRIMARY KEY (Account),
-	FOREIGN KEY (Account) REFERENCES User(Account)
-);
-
-CREATE TABLE Customer(
-	Account CHAR(8) NOT NULL,
+	CustomerFlag BOOLEAN NOT NULL,
 	Phone CHAR(10),
 	Savings INT DEFAULT 0,
 	Address VARCHAR(50),
-	PRIMARY KEY (Account),
-	FOREIGN kEY (Account) REFERENCES User(Account)
+	PRIMARY KEY (Account)
 );
+

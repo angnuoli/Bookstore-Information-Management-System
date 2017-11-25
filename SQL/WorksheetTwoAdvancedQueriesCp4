@@ -31,3 +31,51 @@ WHERE M.MerID = S.MerID
 Group By M.Title
 Having SUM(S.Amount) > 0
 Order By Dollars DESC;
+
+--  5
+SELECT COUNT(CB.amount) AS Number, BA.Author AS Author
+FROM Books AS B, Bookauthors AS BA, Merchandise AS M, Customer AS C,  CustomerBuy AS CB
+WHERE B.merId = BA.merId AND M.merId = B.merId AND CB.merId = B.merId 
+  AND CB.Account = C.Account
+GROUP BY BA.author
+ORDER BY Number DESC
+LIMIT 1;
+
+-- 6
+SELECT BA.author, SUM(M.price * CB.amount) AS profit
+FROM Books AS B, Bookauthors AS BA, Merchandise AS M, CustomerBuy AS CB
+WHERE B.merId = BA.merId AND M.merId = B.merId AND CB.merId = B.merId
+GROUP BY BA.author
+ORDER By profit DESC
+LIMIT 1;
+
+-- 7
+SELECT U.account, U.name, U.gender, U.email, C.savings, C.address, SUM(M.price * CB.amount) AS cost
+FROM Books AS B, Bookauthors AS BA, Merchandise AS M, User AS U, Customer AS C,
+	   CustomerBuy AS CB
+WHERE B.merId = BA.merId AND M.merId = B.merId AND CB.merId = B.merId 
+	    AND CB.account = C.account AND U.Account = C.Account
+Group BY BA.author
+ORDER BY cost DESC
+LIMIT 1;
+
+
+--  8
+SELECT DISTINCT Author 
+FROM  Merchandise AS M, CustomerBuy as CB, Bookauthors as BA 
+WHERE M.MerID = CB.MerID AND M.MerID = BA.MerID AND CB.account in
+	(SELECT account
+	 FROM (SELECT SUM(M.price * CB.amount) as total_price, C.account as account
+	            FROM Merchandise AS M, CustomerBuy as CB, Customer AS C
+	            WHERE C.Account = CB.Account AND CB.MerID = M.MerID
+	            Group by C.Account) 
+	 WHERE total_price >
+		  (SELECT AVG(total_price)
+		  FROM
+		  	  (SELECT SUM(M.price * CB.amount) as total_price, C.account as account
+		      FROM Merchandise AS M, CustomerBuy as CB, Customer AS C
+		      WHERE C.Account = CB.Account AND CB.MerID = M.MerID
+		      Group by C.Account)
+		  )
+	)
+ORDER BY Author;

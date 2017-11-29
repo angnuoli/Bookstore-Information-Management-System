@@ -1,0 +1,224 @@
+-- 1. Insert a new book
+
+INSERT INTO Books (
+	MerID,
+	ISBN,
+	Category
+	)
+VALUES (
+	'M0000200',
+	'738246671',
+	'Computer Science'
+	);
+
+INSERT INTO Merchandise (
+	MerID,
+	Price,
+	Title,
+	PubID,
+	Amount
+	)
+VALUES (
+	'M0000200',
+	42.5,
+	'Intro To Algorithm',
+	'P2000015',
+	300
+	);
+
+-- 2. Insert a new CD
+
+INSERT INTO CDs (
+	MerID,
+	Genre
+	)
+VALUES (
+	'M0000201',
+	'Pop'
+	);
+
+INSERT INTO Merchandise (
+	MerID,
+	Price,
+	Title,
+	PubID,
+	Amount
+	)
+VALUES (
+	'M0000201',
+	77.5,
+	'Tick Tock',
+	'P2000015',
+	300
+	);
+
+
+-- 3. Insert a new author
+
+INSERT INTO BookAuthors (
+	AuthorID,
+	MerID,
+	Author
+	)
+VALUES (
+	'AU000151',
+	'M0000200',
+	'James Bond'
+	);
+
+-- 4. Insert a new CD artist
+
+INSERT INTO CDArtists (
+	ArtistID,
+	MerID,
+	Artist
+	)
+VALUES (
+	'AR000101',
+	'M0000201',
+	'Justin Bond'
+	);
+
+-- 5. Insert a new publisher
+
+INSERT INTO Publisher (
+	PubID,
+	Pname,
+	Phone,
+	State,
+	City,
+	Street,
+	ZIP
+	)
+VALUES (
+	'P2000088',
+	'Der Heat',
+	'6146786521',
+	'CA',
+	'San Francisco',
+	'170 Post St',
+	'94104'
+	);
+
+-- 6. Insert a new customer
+
+INSERT INTO Customer (
+	Account,
+	Phone,
+	Savings,
+	Address
+	)
+VALUES (
+	'A0000050',
+	'5763472537',
+	2000,
+	'822, 500 Avenue, Cleveland Ohio'
+	);
+
+INSERT INTO User (
+	Account,
+	Pwd,
+	Name,
+	Email,
+	Gender)
+VALUES (
+	'A0000050',
+	'15489432',
+	'James Kuk',
+	'James@gmail.com',
+	'M'
+	);
+
+-- 6. Insert a new staff
+
+INSERT INTO Staff (
+	Account,
+	Salary,
+	SSN
+	)
+VALUES (
+	'A0000051',
+	7000,
+	'378041292'
+	);
+
+INSERT INTO User (
+	Account,
+	Pwd,
+	Name,
+	Email,
+	Gender)
+VALUES (
+	'A0000051',
+	'1543892432',
+	'Dames Juk',
+	'Dames@gmail.com',
+	'F'
+	);
+
+-- 7. Insert a warehouse
+
+INSERT INTO Warehouse (
+	WareID,
+	Capacity,
+	State,
+	City,
+	Street,
+	ZIP
+	)
+VALUES (
+	'W0000042',
+	50000,
+	'OH',
+	'Columbus',
+	'1152 N High St',
+	'43201'
+	);
+
+-- 8. Insert a customerBuy record
+
+INSERT INTO CustomerBuy (
+	TransID,
+	MerID,
+	Account,
+	Amount,
+	CDate
+	)
+VALUES (
+	'T0000150',
+	'M0000060',
+	'A0000023',
+	120,
+	'9/19/17'
+	);
+
+-- 9. Insert a staffPurchase record
+
+INSERT INTO StaffPurchase (
+	TransID,
+	MerID,
+	Account,
+	Amount,
+	SDate
+	)
+VALUES (
+	'T0000150',
+	'M0000060',
+	'A0000023',
+	300,
+	'8/19/17'
+	);
+
+-- 10. Insert a storeIn record
+
+INSERT INTO StoreIn (
+	MerID,
+	WareID,
+	StoreAmount
+	)
+VALUES (
+	'M0000200',
+	'W0000042',
+	180
+	);
+

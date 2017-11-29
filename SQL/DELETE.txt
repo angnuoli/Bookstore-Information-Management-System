@@ -1,0 +1,228 @@
+-- 1. Remove a book author AU000151
+
+DELETE 
+FROM BookAuthors
+WHERE BookAuthors.AuthorID = 'AU000151';
+
+-- 2. Remove a book 'M0000200'
+
+DELETE 
+FROM BookAuthors
+WHERE BookAuthors.MerID = 'M0000200';
+
+DELETE
+FROM StoreIn
+WHERE StoreIn.MerID = 'M0000200';
+
+DELETE
+FROM CustomerBuy
+WHERE CustomerBuy.MerID = 'M0000200';
+
+DELETE
+FROM StaffPurchase
+WHERE StaffPurchase.MerID = 'M0000200';
+
+DELETE
+FROM Books
+WHERE Books.MerID = 'M0000200';
+
+DELETE
+FROM Merchandise
+WHERE Merchandise.MerID = 'M0000200';
+
+-- 3. Remove a CD artist 'AR000101'
+
+DELETE 
+FROM CDArtists
+WHERE CDArtists.ArtistID = 'AR000101';
+
+-- 4. Remove a CD 'M0000201'
+
+-- delete artists of the CD
+DELETE 
+FROM CDArtists
+WHERE CDArtists.MerID = 'M0000201';
+
+
+-- delete storeIn records
+
+DELETE
+FROM StoreIn
+WHERE StoreIn.MerID = 'M0000201';
+
+-- delete customerBuy records
+
+DELETE
+FROM CustomerBuy
+WHERE CustomerBuy.MerID = 'M0000201';
+
+-- delete staffPurchase records
+
+DELETE
+FROM StaffPurchase
+WHERE StaffPurchase.MerID = 'M0000201';
+
+-- delete the CD from CDs table
+
+DELETE
+FROM CDs
+WHERE CDs.MerID = 'M0000201';
+
+-- delete the merchandise from Merchandise table
+
+DELETE
+FROM Merchandise
+WHERE Merchandise.MerID = 'M0000201';
+
+
+-- 5. Remove a customer 'A0000050'
+
+-- delete CustomerBuy records
+
+DELETE
+FROM CustomerBuy
+WHERE CustomerBuy.Account = 'A0000050';
+
+-- delete Customer records in Customer table
+
+DELETE
+FROM Customer
+WHERE Customer.Account = 'A0000050';
+
+-- delete User records in User table
+
+DELETE
+FROM User
+WHERE User.Account = 'A0000050';
+
+-- 6. Remove a staff 'A0000051'
+
+-- delete staffPurchase records
+
+DELETE
+FROM StaffPurchase
+WHERE StaffPurchase.Account = 'A0000051';
+
+-- delete Staff records in Staff table
+
+DELETE
+FROM Staff
+WHERE Staff.Account = 'A0000051';
+
+-- delete User records in User table
+
+DELETE
+FROM User
+WHERE User.Account = 'A0000051';
+
+-- 7. Remove a publisher 'P2000088'
+
+-- delete artists of the CD
+
+DELETE 
+FROM CDArtists
+WHERE EXISTS (
+	SELECT *
+	FROM Merchandise
+	WHERE CDArtists.MerID = Merchandise.MerID and Merchandise.PubID = 'P2000088');
+
+-- delete authors of the book
+
+DELETE 
+FROM BookAuthors
+WHERE EXISTS (
+	SELECT *
+	FROM Merchandise
+	WHERE BookAuthors.MerID = Merchandise.MerID and Merchandise.PubID = 'P2000088');
+
+-- delete storeIn records
+
+DELETE
+FROM StoreIn
+WHERE EXISTS (
+	SELECT *
+	FROM Merchandise
+	WHERE StoreIn.MerID = Merchandise.MerID and Merchandise.PubID = 'P2000088');
+
+-- delete customerBuy records
+
+DELETE
+FROM CustomerBuy
+WHERE EXISTS (
+	SELECT *
+	FROM Merchandise
+	WHERE CustomerBuy.MerID = Merchandise.MerID and Merchandise.PubID = 'P2000088');
+
+-- delete staffPurchase records
+
+DELETE
+FROM StaffPurchase
+WHERE EXISTS (
+	SELECT *
+	FROM Merchandise
+	WHERE StaffPurchase.MerID = Merchandise.MerID and Merchandise.PubID = 'P2000088');
+
+-- delete the CD from CDs table
+
+DELETE
+FROM CDs
+WHERE EXISTS (
+	SELECT *
+	FROM Merchandise
+	WHERE CDs.MerID = Merchandise.MerID and Merchandise.PubID = 'P2000088');
+
+-- delete the book from Books table
+
+DELETE
+FROM Books
+WHERE EXISTS (
+	SELECT *
+	FROM Merchandise
+	WHERE Books.MerID = Merchandise.MerID and Merchandise.PubID = 'P2000088');
+
+
+-- delete the merchandise from Merchandise table
+
+DELETE
+FROM Merchandise
+WHERE Merchandise.PubID = 'P2000088';
+
+-- delete the publisher from Publisher table
+
+DELETE
+FROM Publisher
+WHERE Publisher.PubID = 'P2000088';
+
+
+-- 8. Remove a warehouse 'W0000042'
+
+-- delete storeIn records
+
+DELETE
+FROM StoreIn
+WHERE StoreIn.WareID = 'W0000042';
+
+-- delete the warehouse
+
+DELETE
+FROM Warehouse
+WHERE Warehouse.WareID = 'W0000042';
+
+
+-- 9. Remove a customerBuy record 'T0000150'
+
+DELETE
+FROM CustomerBuy
+WHERE CustomerBuy.TransID = 'T0000150';
+
+-- 10. Remove a staffPurchase record 'T0000150'
+
+DELETE
+FROM StaffPurchase
+WHERE StaffPurchase.TransID = 'T0000150';
+
+-- 11. Remove a storeIn record
+
+DELETE
+FROM StoreIn
+WHERE StoreIn.MerID = 'M0000200' and StoreIn.WareID = 'W0000042';
